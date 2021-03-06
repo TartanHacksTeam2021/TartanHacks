@@ -88,14 +88,14 @@ const Profile = () => {
                         <span className="heading">22</span>
                         <span className="description">Friends</span>
                       </div>
-                      <div>
+                      {/* <div>
                         <span className="heading">10</span>
                         <span className="description">Photos</span>
                       </div>
                       <div>
                         <span className="heading">89</span>
                         <span className="description">Comments</span>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </Row>
@@ -106,22 +106,17 @@ const Profile = () => {
                   </h3>
                   <div className="h5 font-weight-300">
                     <i className="ni location_pin mr-2" />
-                    Bucharest, Romania
+                    Pittsburgh, Pennsylvania
                   </div>
                   <div className="h5 mt-4">
                     <i className="ni business_briefcase-24 mr-2" />
-                    Solution Manager - Creative Tim Officer
+                    Computer Science Freshman - Class of '24
                   </div>
                   <div>
                     <i className="ni education_hat mr-2" />
-                    University of Computer Science
+                    Carnegie Mellon University
                   </div>
-                  <hr className="my-4" />
-                  <p>
-                    Ryan — the name taken by Melbourne-raised, Brooklyn-based
-                    Nick Murphy — writes, performs and records all of his own
-                    music.
-                  </p>
+                 
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
                     Show more
                   </a>
@@ -314,8 +309,7 @@ const Profile = () => {
                         className="form-control-alternative"
                         placeholder="A few words about you ..."
                         rows="4"
-                        defaultValue="A beautiful Dashboard for Bootstrap 4. It is Free and
-                        Open Source."
+                        defaultValue=""
                         type="textarea"
                       />
                     </FormGroup>

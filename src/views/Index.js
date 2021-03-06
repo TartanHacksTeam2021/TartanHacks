@@ -89,6 +89,12 @@ const Index = (props) => {
                     <h2 className="text-white mb-0">Balance</h2>
                   </div>
                   <div className="col">
+                    <h6 className="text-uppercase text-light ls-1 mb-1">
+                      Current Balance
+                    </h6>
+                    <h2 className="text-white mb-0">$60,000</h2>
+                  </div>
+                  <div className="col">
                     <Nav className="justify-content-end" pills>
                       <NavItem>
                         <NavLink
