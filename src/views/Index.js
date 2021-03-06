@@ -75,7 +75,7 @@ const Index = (props) => {
                     <h6 className="text-uppercase text-light ls-1 mb-1">
                       Overview
                     </h6>
-                    <h2 className="text-white mb-0">Sales value</h2>
+                    <h2 className="text-white mb-0">Balance</h2>
                   </div>
                   <div className="col">
                     <Nav className="justify-content-end" pills>
@@ -150,7 +150,7 @@ const Index = (props) => {
               <CardHeader className="border-0">
                 <Row className="align-items-center">
                   <div className="col">
-                    <h3 className="mb-0">Page visits</h3>
+                    <h3 className="mb-0">Transaction History</h3>
                   </div>
                   <div className="col text-right">
                     <Button
@@ -167,54 +167,52 @@ const Index = (props) => {
               <Table className="align-items-center table-flush" responsive>
                 <thead className="thead-light">
                   <tr>
-                    <th scope="col">Page name</th>
-                    <th scope="col">Visitors</th>
-                    <th scope="col">Unique users</th>
-                    <th scope="col">Bounce rate</th>
+                    <th scope="col">Vendor Name</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Compared to your average</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">/argon/</th>
-                    <td>4,569</td>
-                    <td>340</td>
+                    <th scope="row">Spotify</th>
+                    <td>$13.99</td>
+                    <td>March 6th, 2021 3:24 PM</td>
                     <td>
-                      <i className="fas fa-arrow-up text-success mr-3" /> 46,53%
+                      <i className="fas fa-arrow-up text-success mr-3" /> 13.48%
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/argon/index.html</th>
-                    <td>3,985</td>
-                    <td>319</td>
+                    <th scope="row">Netflix</th>
+                    <td>$13.99</td>
+                    <td>March 6th, 2021 3:24 PM</td>
                     <td>
-                      <i className="fas fa-arrow-down text-warning mr-3" />{" "}
-                      46,53%
+                      <i className="fas fa-arrow-up text-success mr-3" /> 13.48%
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/argon/charts.html</th>
-                    <td>3,513</td>
-                    <td>294</td>
+                    <th scope="row">McDonalds</th>
+                    <td>$13.99</td>
+                    <td>March 6th, 2021 3:24 PM</td>
                     <td>
-                      <i className="fas fa-arrow-down text-warning mr-3" />{" "}
-                      36,49%
+                      <i className="fas fa-arrow-up text-success mr-3" /> 13.48%
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/argon/tables.html</th>
-                    <td>2,050</td>
-                    <td>147</td>
+                    <th scope="row">CMU Tuition</th>
+                    <td>$78,500</td>
+                    <td>March 6th, 2021 3:24 PM</td>
                     <td>
-                      <i className="fas fa-arrow-up text-success mr-3" /> 50,87%
+                      <i className="fas fa-arrow-up text-success mr-3" /> 11113.48%
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/argon/profile.html</th>
-                    <td>1,795</td>
-                    <td>190</td>
+                    <th scope="row">Amazon</th>
+                    <td>$46.99</td>
+                    <td>March 6th, 2021 3:24 PM</td>
                     <td>
                       <i className="fas fa-arrow-down text-danger mr-3" />{" "}
-                      46,53%
+                      46.53%
                     </td>
                   </tr>
                 </tbody>
@@ -226,7 +224,7 @@ const Index = (props) => {
               <CardHeader className="border-0">
                 <Row className="align-items-center">
                   <div className="col">
-                    <h3 className="mb-0">Social traffic</h3>
+                    <h3 className="mb-0">Deposit History</h3>
                   </div>
                   <div className="col text-right">
                     <Button
@@ -243,15 +241,15 @@ const Index = (props) => {
               <Table className="align-items-center table-flush" responsive>
                 <thead className="thead-light">
                   <tr>
-                    <th scope="col">Referral</th>
-                    <th scope="col">Visitors</th>
+                    <th scope="col">From</th>
+                    <th scope="col">Amount</th>
                     <th scope="col" />
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">Facebook</th>
-                    <td>1,480</td>
+                    <th scope="row">Mom</th>
+                    <td>$83</td>
                     <td>
                       <div className="d-flex align-items-center">
                         <span className="mr-2">60%</span>
@@ -266,8 +264,8 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">Facebook</th>
-                    <td>5,480</td>
+                    <th scope="row">Venmo</th>
+                    <td>$32.22</td>
                     <td>
                       <div className="d-flex align-items-center">
                         <span className="mr-2">70%</span>
@@ -282,8 +280,8 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">Google</th>
-                    <td>4,807</td>
+                    <th scope="row">Paypal</th>
+                    <td>$344</td>
                     <td>
                       <div className="d-flex align-items-center">
                         <span className="mr-2">80%</span>
@@ -294,8 +292,8 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">Instagram</th>
-                    <td>3,678</td>
+                    <th scope="row">Work</th>
+                    <td>$2400</td>
                     <td>
                       <div className="d-flex align-items-center">
                         <span className="mr-2">75%</span>
@@ -310,8 +308,8 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">twitter</th>
-                    <td>2,645</td>
+                    <th scope="row">Grandma</th>
+                    <td>$1350</td>
                     <td>
                       <div className="d-flex align-items-center">
                         <span className="mr-2">30%</span>
