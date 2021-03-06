@@ -43,7 +43,7 @@ const Login = () => {
               <small>Sign in with</small>
             </div>
             <div className="btn-wrapper text-center">
-              <Button
+              {/* <Button
                 className="btn-neutral btn-icon"
                 color="default"
                 href="#pablo"
@@ -59,7 +59,7 @@ const Login = () => {
                   />
                 </span>
                 <span className="btn-inner--text">Github</span>
-              </Button>
+              </Button> */}
               <Button
                 className="btn-neutral btn-icon"
                 color="default"
@@ -126,7 +126,7 @@ const Login = () => {
                 </label>
               </div>
               <div className="text-center">
-                <Button className="my-4" color="primary" type="button">
+                <Button className="my-4" color="primary" type="button" onClick={() => window.location.href = "/admin/index"}>
                   Sign in
                 </Button>
               </div>
