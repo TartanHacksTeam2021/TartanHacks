@@ -229,7 +229,7 @@ const Index = (props) => {
                       </Col>
                     </Row>
                     <p className="mt-3 mb-0 text-muted text-sm">
-                      <span className="text-danger mr-2">
+                      <span className="text-success mr-2">
                         <i className="fa fa-arrow-up" /> 11.23%
                       </span>{" "}
                       <span className="text-nowrap">Compared to the national average</span>
