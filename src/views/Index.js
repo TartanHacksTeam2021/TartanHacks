@@ -220,7 +220,8 @@ const Index = (props) => {
                     <td>$78,500</td>
                     <td>March 6th, 2021 3:24 PM</td>
                     <td>
-                      <i className="fas fa-arrow-up text-success mr-3" /> 11113.48%
+                      <i className="fas fa-arrow-up text-success mr-3" />{" "}
+                      11113.48%
                     </td>
                   </tr>
                   <tr>
@@ -350,23 +351,22 @@ const Index = (props) => {
             <Card className="bg-default shadow">
               <CardHeader className="bg-transparent border-0">
                 <Row className="align-items-center">
-                    <div className="col">
+                  <div className="col">
                     <h3 className="text-white mb-0">Payment Splitting</h3>
-                    </div>
-                    <div className="col text-right">
-                      <Button
-                        color="primary"
-                        href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                        size="sm"
-                      >
-                        Split New Payment
-                      </Button>
-                    </div>
-                  </Row>
-                
+                  </div>
+                  <div className="col text-right">
+                    <Button
+                      color="primary"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                      size="sm"
+                    >
+                      Split New Payment
+                    </Button>
+                  </div>
+                </Row>
               </CardHeader>
-              
+
               <Table
                 className="align-items-center table-dark table-flush"
                 responsive
@@ -393,15 +393,12 @@ const Index = (props) => {
                           <img
                             alt="..."
                             src={
-                              require("../assets/img/theme/bootstrap.jpg")
-                                .default
+                              require("../assets/img/theme/uber.png").default
                             }
                           />
                         </a>
                         <Media>
-                          <span className="mb-0 text-sm">
-                            Uber
-                          </span>
+                          <span className="mb-0 text-sm">Uber</span>
                         </Media>
                       </Media>
                     </th>
@@ -501,7 +498,7 @@ const Index = (props) => {
                         </UncontrolledTooltip>
                       </div>
                     </td>
-                    
+
                     <td className="text-right">
                       <UncontrolledDropdown>
                         <DropdownToggle
@@ -548,15 +545,12 @@ const Index = (props) => {
                           <img
                             alt="..."
                             src={
-                              require("../assets/img/theme/angular.jpg")
-                                .default
+                              require("../assets/img/theme/pizza.png").default
                             }
                           />
                         </a>
                         <Media>
-                          <span className="mb-0 text-sm">
-                            Pizza
-                          </span>
+                          <span className="mb-0 text-sm">Pizza</span>
                         </Media>
                       </Media>
                     </th>
@@ -653,7 +647,7 @@ const Index = (props) => {
                         </UncontrolledTooltip>
                       </div>
                     </td>
-                    
+
                     <td className="text-right">
                       <UncontrolledDropdown>
                         <DropdownToggle
@@ -700,13 +694,15 @@ const Index = (props) => {
                           <img
                             alt="..."
                             src={
-                              require("../assets/img/theme/sketch.jpg")
+                              require("../assets/img/theme/birthday.png")
                                 .default
                             }
                           />
                         </a>
                         <Media>
-                          <span className="mb-0 text-sm">David's Birthday Gift</span>
+                          <span className="mb-0 text-sm">
+                            David's Birthday Gift
+                          </span>
                         </Media>
                       </Media>
                     </th>
@@ -806,7 +802,7 @@ const Index = (props) => {
                         </UncontrolledTooltip>
                       </div>
                     </td>
-                   
+
                     <td className="text-right">
                       <UncontrolledDropdown>
                         <DropdownToggle
@@ -853,8 +849,7 @@ const Index = (props) => {
                           <img
                             alt="..."
                             src={
-                              require("../assets/img/theme/react.jpg")
-                                .default
+                              require("../assets/img/theme/shuttle.png").default
                             }
                           />
                         </a>
@@ -961,7 +956,7 @@ const Index = (props) => {
                         </UncontrolledTooltip>
                       </div>
                     </td>
-                   
+
                     <td className="text-right">
                       <UncontrolledDropdown>
                         <DropdownToggle
@@ -1008,14 +1003,12 @@ const Index = (props) => {
                           <img
                             alt="..."
                             src={
-                              require("../assets/img/theme/vue.jpg").default
+                              require("../assets/img/theme/dunkin.png").default
                             }
                           />
                         </a>
                         <Media>
-                          <span className="mb-0 text-sm">
-                            Dunkin Donuts
-                          </span>
+                          <span className="mb-0 text-sm">Dunkin Donuts</span>
                         </Media>
                       </Media>
                     </th>
@@ -1115,7 +1108,7 @@ const Index = (props) => {
                         </UncontrolledTooltip>
                       </div>
                     </td>
-                    
+
                     <td className="text-right">
                       <UncontrolledDropdown>
                         <DropdownToggle
