@@ -35,7 +35,7 @@ const AdminNavbar = () => {
     <>
       <Navbar className="navbar-top navbar-horizontal navbar-dark" expand="md">
         <Container className="px-4">
-          <h1>Tartan Hacks</h1>
+          <h1>Quick Bank</h1>
           {/* <NavbarBrand to="/" tag={Link}>
             <img
               alt="..."

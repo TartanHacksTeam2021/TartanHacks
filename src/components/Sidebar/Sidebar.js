@@ -127,7 +127,7 @@ const Sidebar = (props) => {
           </NavbarBrand>
         ) : null} */}
         {/* User */}
-        <h1>Tartan Hacks</h1>
+        <h1>Quick Bank</h1>
         <Nav className="align-items-center d-md-none">
           <UncontrolledDropdown nav>
             <DropdownToggle nav className="nav-link-icon">
