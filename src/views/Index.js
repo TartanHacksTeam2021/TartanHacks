@@ -28,6 +28,7 @@ import {
   Card,
   CardHeader,
   CardBody,
+  CardTitle,
   NavItem,
   NavLink,
   Nav,
@@ -48,6 +49,7 @@ import {
   Row,
   UncontrolledTooltip,
 } from "reactstrap";
+import Cards from 'react-credit-cards';
 
 // core components
 import {
@@ -58,6 +60,8 @@ import {
 } from "variables/charts.js";
 
 import Header from "components/Headers/Header.js";
+import 'react-credit-cards/lib/styles.scss';
+
 
 const Index = (props) => {
   const [activeNav, setActiveNav] = useState(1);
@@ -160,6 +164,79 @@ const Index = (props) => {
               </CardBody>
             </Card>
           </Col> */}
+        </Row>
+        <Row className="mt-5">
+        <Cards
+          cvc={"123"}
+          expiry={"●●/22"}
+          focused={"number"}
+          name={"Jessica Jones"}
+          number={"●●●● ●●●● ●●●● 3456"}
+          issuer={"visa"}
+          preview={true}
+        />
+        </Row>
+        <Row className="mt-5 align-items-center justify-content-center">
+            <Col lg="6" xl="3">
+                <Card className="card-stats mb-4 mb-xl-0">
+                  <CardBody>
+                    <Row>
+                      <div className="col">
+                        <CardTitle
+                          tag="h5"
+                          className="text-uppercase text-muted mb-0"
+                        >
+                          Credit Card Balance
+                        </CardTitle>
+                        <span className="h2 font-weight-bold mb-0">
+                         $1459.66
+                        </span>
+                      </div>
+                      <Col className="col-auto">
+                        <div className="icon icon-shape bg-danger text-white rounded-circle shadow">
+                          <i className="fas fa-balance-scale-right" />
+                        </div>
+                      </Col>
+                    </Row>
+                    <p className="mt-3 mb-0 text-muted text-sm">
+                      <span className="text-danger mr-2">
+                        <i className="fa fa-arrow-up" /> 19.23%
+                      </span>{" "}
+                      <span className="text-nowrap">From last month</span>
+                    </p>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col lg="6" xl="3">
+                <Card className="card-stats mb-4 mb-xl-0">
+                  <CardBody>
+                    <Row>
+                      <div className="col">
+                        <CardTitle
+                          tag="h5"
+                          className="text-uppercase text-muted mb-0"
+                        >
+                          Your Credit Score
+                        </CardTitle>
+                        <span className="h2 font-weight-bold mb-0">
+                         680
+                        </span>
+                      </div>
+                      <Col className="col-auto">
+                        <div className="icon icon-shape bg-warning text-white rounded-circle shadow">
+                          <i className="fas fa-credit-card" />
+                        </div>
+                      </Col>
+                    </Row>
+                    <p className="mt-3 mb-0 text-muted text-sm">
+                      <span className="text-success mr-2">
+                        <i className="fa fa-arrow-up" /> 11.23%
+                      </span>{" "}
+                      <span className="text-nowrap">Compared to the national average</span>
+                    </p>
+                  </CardBody>
+                </Card>
+              </Col>
         </Row>
         <Row className="mt-5">
           <Col className="mb-5 mb-xl-0" xl="8">
